@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPS LA CAÑADA - La Rioja</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>CAPS LA CAÑADA </h1>
+        <p>Centro de Atención Primaria de la Salud - La Rioja</p>
+    </header>
+
+    <main>
+        <!-- Sección Información -->
+        <section class="info">
+            <h2>Sobre Nosotros</h2>
+            <p>Brindamos atención médica de calidad a toda la comunidad de la zona sur de La Rioja. Nuestro compromiso es la prevención y el cuidado de tu familia.</p>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Pediatría</li>
+                <li>Medico General</li> 
+              <li>Tocoginecologia </li>
+              <li>Licenciado en Obstetricia</li>
+               <li>Psicologia</li>
+               <li>Odontologia</li>
+               <li>Servicio de Laboratorio</li>
+                <li>Enfermería </li>
+                <li>Vacunatorio</li>
+            </ul>
+        </section>
+
+        <!-- Sección Interactiva: Formulario de Turnos -->
+        <section class="turnos">
+            <h2>Solicitud de Turno Online</h2>
+            <form id="formTurno">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" required placeholder="Ej. Juan Pérez">
+
+                <label for="especialidad">Especialidad:</label>
+                <select id="especialidad">
+                    <option value="Pediatría">Pediatría</option>
+                  <option value="Medicina General">Medicina General</option>
+                  <option value="Tocoginecologia">Tocoginecologia</option>
+                  <option value="Licenciado en Obstetricia">Licenciado en Obstetricia</option>  
+                   <option value="Psicologia">Psicologia</option> 
+                   <option value="Odontologia">Odontologia</option> 
+                   <option value="Enfermeria">Enfermeria</option>
+                  <option value="Vacunatorio">Vacunatorio</option>
+                </select>
+
+                <button type="submit">Confirmar Turno</button>
+            </form>
+            <!-- Mensaje de confirmación que aparecerá con JS -->
+            <p id="mensajeConfirmacion" class="oculto"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casp La Cañada - Ministerio de Salud de La Rioja</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
